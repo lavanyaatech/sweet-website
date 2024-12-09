@@ -1,0 +1,221 @@
+body {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  background-color:rgb(253, 239, 253); 
+  color:black;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+   
+} 
+
+.navbar {
+  /* background-color:rgb(253, 239, 253); */
+  background-color:rgb(216, 243, 242);
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.navbar-nav .nav-link {
+    font-size: 5px;
+    font-weight: bolder;
+    color: darkblue;
+  }
+  .navbar-toggler {
+    border-color:rgb(253, 239, 253);
+  }
+  
+  /* Style for Navbar icons (Heart, Cart, Search) */
+  .navbar-nav img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  #cart-badge {
+    position: absolute;
+    top: 15px;
+    background-color:black;
+    color: white;
+    font-size: 10px;
+    padding: 3px 6px;
+    border-radius: 80%;
+  }
+  /* Centering the logo */
+  .navbar-brand {
+    font-weight: bolder;
+    font-size: 24px;
+    
+    color: darkblue/* Customize color */
+
+  }
+  
+  /* Navbar Link Hover */
+  .navbar-nav .nav-link:hover {
+    color:rgb(0, 0, 12);
+    font-weight:bolder;
+  } /* small image */
+ /* Ensures that the subnav is displayed as a flex container */
+ nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Vertically aligns the images in the center */
+  justify-content: space-between; /* Adds spacing between each image */
+  padding-right: 150px; /* Adds some padding around the subnav */
+  padding-left: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Styles for each Nav.Link to remove default link spacing and ensure images align horizontally */
+nav.nav-link {
+  display: inline-flex; /* Ensures the links behave inline */
+  align-items: center; /* Vertically centers the images inside the link */
+  padding-right: 5px; /* Adds space between the links */
+  text-decoration: none; /* Removes underlines from the links */
+}
+
+/* Styles for images */
+nav.nav-link img {
+  width: 20px; /* Set image width */
+  height: 20px; /* Set image height */
+  object-fit: cover; /* Ensures that images maintain their aspect ratio while filling the space */
+  border: 1px solid black;
+}
+
+
+/* Optional: You can add hover effects to images for better interaction */
+nav.nav-link:hover img {
+  opacity: 0.8; /* Changes opacity on hover */
+  transition: opacity 0.3s; /* Adds smooth transition on hover */
+}
+ 
+/* image caption */
+/* In your CSS file */
+.image-container {
+  text-align: center;
+  display: block;
+}
+
+.image-caption h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.image-caption p {
+  font-size: 14px;
+}
+/* bulkorder form */
+.form-section {
+  margin-bottom: 15px;
+}
+.form-control {
+  display: block;
+}
+.quantity-btns {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+}
+.form-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.message-box {
+  width: 100%;
+}
+/* slider */
+.carousel-control-prev-icon, .carousel-control-next-icon { 
+  background-color: black;
+  border-radius: 40px;
+}
+/* footer */
+footer {
+  padding: 40px 20px;
+  background-color:rgb(253, 239, 253);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  padding: 0 20px;
+  min-width: 220px; /* Adjust based on your preference */
+}
+
+.column h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.column p {
+  margin: 5px 0;
+}
+
+
+
+.subscribe-section {
+  margin-top: 20px;
+}
+
+.subscribe-section form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subscribe-section input {
+  padding: 8px;
+  font-size: 14px;
+  flex: 1;
+  border-radius: 30px;
+}
+
+.subscribe-section button {
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #5cb85c;
+  color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  width:50%;
+}
+
+.subscribe-section button:hover {
+  background-color: #4cae4c;
+}
+/* }2nd image hover */
+.d-block {
+  width: 100%;
+  transition: transform 0.3s ease; /* Smooth transition for zoom */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.d-block:hover {
+  transform: scale(1.1); /* Increase size by 10% */
+}
+
+/* layout image */
+.d-block1 img {
+  width: 100%;
+  display: flex;
+  border:  2px solid black;
+  transition: transform 0.3s ease; /* Smooth transition for zoom */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.d-block1 img:hover {
+  transform: scale(1.1); /* Increase size by 10% */
+}
+
