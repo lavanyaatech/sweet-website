@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
 import Layout from "./Pages/Layout";
-import { BrowserRouter,Route, Routes } from "react-router-dom";
+import { HashRouter,Route, Routes } from "react-router-dom";
 import Sweets from "./Pages/Sweets";
 import IndianCookies from "./Pages/IndianCookies";
 import GuiltFree from "./Pages/GuiltFree";
@@ -16,7 +16,7 @@ import Contact from "./Pages/Contact";
 
 export default function App(){
   return(
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout/>}>
         <Route path="/" element={<Sweets/>}/>
@@ -30,7 +30,7 @@ export default function App(){
         <Route path="Contact" element={<Contact/>}/>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
