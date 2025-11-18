@@ -277,7 +277,7 @@ const BulkOrders = () => {
    <hr></hr><div class="copyright">
       <h5>&copy; 2024 Sweets Shop Private Limited. All Rights Reserved.</h5>
     </div>
-  </div>
+    </div>
   </div>
 </footer>
 
